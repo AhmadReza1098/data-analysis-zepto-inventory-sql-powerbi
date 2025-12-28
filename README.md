@@ -24,6 +24,7 @@ This SQL project analyzes a Zepto-style grocery inventory dataset (from Kaggle) 
   
    ## Project workflow
    **1. Database & table creation**
+   ```sql
    DROP TABLE IF EXISTS zepto_inventory;
 
 USE zepto;
@@ -49,6 +50,6 @@ ADD COLUMN sku_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST;
 SELECT *
 FROM zepto_inventory
 LIMIT 10;
-
+` ```
 
 
