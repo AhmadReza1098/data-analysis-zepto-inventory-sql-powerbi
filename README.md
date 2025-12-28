@@ -22,32 +22,28 @@ This SQL project analyzes a Zepto-style grocery inventory dataset (from Kaggle) 
    - Analyzed discount patterns by category and highlighted heavily discounted and premium products.  
    - Computed price-per-gram, weight buckets, and stockout patterns for high-MRP items.
   
-   ## Project workflow
-   **1. Database & table creation**
+## Project workflow
+
+**1. Database & table creation**
+
 ```sql
 DROP TABLE IF EXISTS zepto_inventory;
 USE zepto;
 
 CREATE TABLE zepto_inventory (
-category VARCHAR(120),
-name VARCHAR(150) NOT NULL,
-mrp DECIMAL(10,2),
-discountPercent DECIMAL(5,2),
-availableQuantity INT,
-discountedSellingPrice DECIMAL(10,2),
-weightInGms INT,
-outOfStock VARCHAR(50),
-quantity INT
+    category               VARCHAR(120),
+    name                   VARCHAR(150) NOT NULL,
+    mrp                    DECIMAL(10,2),
+    discountPercent        DECIMAL(5,2),
+    availableQuantity      INT,
+    discountedSellingPrice DECIMAL(10,2),
+    weightInGms            INT,
+    outOfStock             VARCHAR(50),
+    quantity               INT
 );
 
 -- Add synthetic primary key
 ALTER TABLE zepto_inventory
-ADD COLUMN sku_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST;```
+ADD COLUMN sku_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST;
 
-**2. Quick Checks**
-
-```sql
-SELECT *
-FROM zepto_inventory
-LIMIT 10;```
-
+   
