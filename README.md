@@ -78,8 +78,8 @@ Suggested folder layout for this project:
 ```
 data-analysis-zepto-inventory-sql/
 │
-├── README.md                     # Project documentation
-├── zepto_inventory.sql           # All SQL (table creation + analysis queries)
+├── README.md                    
+├── zepto_inventory.sql           
 │
 ├── sql/
 │   ├── 01_create_table.sql
@@ -88,7 +88,7 @@ data-analysis-zepto-inventory-sql/
 │   └── 04_business_insights.sql
 │
 └── exports/
-    └── query_results.csv         # Optional exports of SQL outputs
+    └── query_results.csv        
 ```
 
 This structure follows common patterns used in Zepto inventory SQL portfolio projects.
@@ -179,6 +179,7 @@ Aspiring Data Analyst – SQL & BI
 - 🔗 https://github.com/AhmadReza1098  
 
 Feel free to use or adapt this project as part of your analytics portfolio.
+
 
 
 
