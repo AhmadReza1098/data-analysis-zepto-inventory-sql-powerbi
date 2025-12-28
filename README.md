@@ -43,6 +43,7 @@ CREATE TABLE zepto_inventory (
 );
 
 ### 2. Quick Checks
+```sql
 -- Sample rows
 SELECT *
 FROM zepto_inventory
