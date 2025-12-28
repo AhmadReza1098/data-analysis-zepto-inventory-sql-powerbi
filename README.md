@@ -42,12 +42,12 @@ quantity INT
 
 -- Add synthetic primary key
 ALTER TABLE zepto_inventory
-ADD COLUMN sku_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST;
-` ```
+ADD COLUMN sku_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST;```
 
 **2. Quick Checks**
+
 ```sql
 SELECT *
 FROM zepto_inventory
-LIMIT 10;` ```
+LIMIT 10;```
 
